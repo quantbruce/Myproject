@@ -140,12 +140,12 @@ def get_all_today_stock_data_from_sina_markcenter():
     ## 返回最后结果
     return all_df
 
-
+# 将获取数据赋值到df
 df = get_all_today_stock_data_from_sina_markcenter()
 
 
 # 将今日开盘交易的所有股票数据合并在一张表查看(如果有这个需求，可选以下代码)
-# df.to_csv('C:/Users/47053/Desktop/today_stock_info.csv', index=False, encoding='gbk')  
+# df.to_csv('C:/Users/Desktop/today_stock_info.csv', index=False, encoding='gbk')  
 
 #### 两个确定是否更新今日股票的条件
 #### 大范围约束(第一层)
