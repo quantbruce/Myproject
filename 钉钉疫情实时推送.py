@@ -75,8 +75,8 @@ def cal_timestamp_sign(secret):
 
 #钉钉实时推送信息函数
 def send_dingding_msg(content,
-                      robot_id='7bddc45a96823a6d6fd5456399e895045ee23ccaf80a901a03e29427b02a02c5',
-                      secret='SEC0e1d90dd9a08e5b1f2896e56a727299aa4a382464122d3274f89652bceecb242'):
+                      robot_id='-----------------------------------------------------------------',
+                      secret='-------------------------------------------------------------------'):
 
     try:
         msg = {
@@ -102,22 +102,22 @@ def send_dingding_msg(content,
 def cal_remind_time():
     now_time = datetime.now()
     if now_time.hour == 7 and now_time.minute == 00 and now_time.second == 00:
-       send_dingding_msg('尊敬的Bruce, 这是湖南疫情最新信息\n' + data_hunan_city)
+       send_dingding_msg('你好Bruce, 这是湖南疫情最新信息\n' + data_hunan_city)
 
     elif now_time.hour == 9 and now_time.minute == 30 and now_time.second == 00:
-        send_dingding_msg('尊敬的Bruce, 这是湖南疫情最新信息\n' + data_hunan_city)
+        send_dingding_msg('你好Bruce, 这是湖南疫情最新信息\n' + data_hunan_city)
 
     elif now_time.hour == 12 and now_time.minute == 00 and now_time.second == 00:
-        send_dingding_msg('尊敬的Bruce, 这是湖南疫情最新信息\n' + data_hunan_city)
+        send_dingding_msg('你好Bruce, 这是湖南疫情最新信息\n' + data_hunan_city)
 
     elif now_time.hour == 17 and now_time.minute == 30 and now_time.second == 00:
-        send_dingding_msg('尊敬的Bruce, 这是湖南疫情最新信息\n' + data_hunan_city)
+        send_dingding_msg('你好Bruce, 这是湖南疫情最新信息\n' + data_hunan_city)
 
     elif now_time.hour == 22 and now_time.minute == 00 and now_time.second == 00:
-        send_dingding_msg('尊敬的Bruce, 这是湖南疫情最新信息\n' + data_hunan_city)
+        send_dingding_msg('你好Bruce, 这是湖南疫情最新信息\n' + data_hunan_city)
 
 
-
+# 主程序入口
 if __name__ == '__main__':
     while True:
         cal_remind_time()
