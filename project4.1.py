@@ -24,17 +24,10 @@ price_obj = 40000  # 下期目标平均单箱价格(结构)
 C = 1 # 约束条件中的超参数
 
 3.二次规划建模
-$
-min f = C*(Sold\_obj - \sum_{i=1}^I Sold\_next_i)^2 + \sum_{i=1}^I(( Sold\_next_i-Sold_i)/Sold_i)^2
-$
-
-$st$
-
-$ 0<=Sold\_next_i<=Cap_i $
-
-$
-Sold\_obj * Price\_obj * 0.9 <= \sum_{i=1}^I Price_i * Sold\_next_i <= Sold\_obj * Price\_obj * 1.1
-$
+minf=C∗(Sold_obj−∑Ii=1Sold_nexti)2+∑Ii=1((Sold_nexti−Soldi)/Soldi)2 
+st 
+0<=Sold_nexti<=Capi 
+Sold_obj∗Price_obj∗0.9<=∑Ii=1Pricei∗Sold_nexti<=Sold_obj∗Price_obj∗1.1
 
 # 目标函数 (x代表sold_next)
 obj = lambda x: C*((sold_obj*250-x.sum())**2) + (((x - sold)/sold)**2).sum()
