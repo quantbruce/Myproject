@@ -1,5 +1,4 @@
 ```python
-#!/usr/bin/python
 import re
 
 line = "Cats are smarter than dogs"
