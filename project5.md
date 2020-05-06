@@ -33,7 +33,6 @@ import numpy as np
 import seaborn as sns
 import matplotlib.pyplot as plt
 import datetime
-import missingno as msno
 % matplotlib inline
 import warnings
 warnings.simplefilter(action='ignore', category=FutureWarning)
