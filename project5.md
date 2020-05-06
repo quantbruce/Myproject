@@ -60,4 +60,10 @@ df.info()
 ```
 ![image](https://github.com/quantbruce/Myproject/blob/master/graph/2.png)
  
+ ```python
+ df.describe().T
+ ```
+ ![image](https://github.com/quantbruce/Myproject/blob/master/graph/3.png)
+ 
+ 
  
