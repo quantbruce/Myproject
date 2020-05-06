@@ -25,7 +25,7 @@
 #### 市场：1.游戏市场的总体发展趋势?  2.前5名发行商历史销售情况及变化趋势？ 3.五大市场的主导地位, 近期变化趋势？
 
 
-"""
+<
 import pandas as pd
 import numpy as np
 import seaborn as sns
@@ -41,4 +41,4 @@ plt.style.use('fivethirtyeight')
 plt.rcParams['font.sans-serif'] = ['SimHei']
 # 负号的正常显示
 plt.rcParams['axes.unicode_minus'] = False
-"""
+>
