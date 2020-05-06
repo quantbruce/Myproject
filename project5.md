@@ -53,5 +53,5 @@ plt.rcParams['axes.unicode_minus'] = False
 df = pd.read_csv('vgsales.csv')
 df.head()
 ```
-![image](E:/川大/实习求职/kaggle/videogamesales/graph/1.png)
+![image](https://github.com/quantbruce/Myproject/blob/master/graph/1.png)
 
