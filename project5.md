@@ -17,7 +17,7 @@
 #### JP_Sales -日本销售额(百万)
 #### Other_Sales—世界其他地区销售额(百万)
 #### Global_Sales—全球销售总额。
-适用场景：电商、游戏销售，常规销售数据。
+
 
 ### 拟研究的问题
 #### 用户：1. 用户喜爱的游戏类型、近期变化趋势？ 2.用户最喜爱的游戏平台、近期变化趋势？
@@ -47,5 +47,10 @@ plt.rcParams['font.sans-serif'] = ['SimHei']
 # 负号的正常显示
 plt.rcParams['axes.unicode_minus'] = False
 ```
-
+# 2. 描述性统计分析
+```python
+# 导入初始数据集
+df = pd.read_csv('vgsales.csv')
+df.head()
+```
 
