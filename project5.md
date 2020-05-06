@@ -20,13 +20,13 @@
 适用场景：电商、游戏销售，常规销售数据。
 
 ### 拟研究的问题
-#### 用户：1. 用户喜爱的游戏类型、近期变化趋势？
-####       2.用户最喜爱的游戏平台、近期变化趋势？
+#### 用户：1. 用户喜爱的游戏类型、近期变化趋势？ 2.用户最喜爱的游戏平台、近期变化趋势？
 
 #### 发行商：1. 前5名销售商的销售情况、近期变化趋势?  2. 各发行商最擅长的游戏领域？近期变化趋势？
 
-#### 市场：1.游戏市场的总体发展趋势?  2.前5名发行商历史销售情况及变化趋势？ 3.五大市场的主导地位, 近期变化趋势？
+#### 市场：1.游戏市场的总体发展趋势?  2.前5名发行商历史销售情况？ 3.五大市场的主导地位, 近期变化趋势？
 
+# 1.包的导入
 ```python
 import pandas as pd
 import numpy as np
@@ -37,10 +37,15 @@ import missingno as msno
 % matplotlib inline
 import warnings
 warnings.simplefilter(action='ignore', category=FutureWarning)
+
 # 画图风格
 plt.style.use('fivethirtyeight')
+
 # 中文标签的正常显示
 plt.rcParams['font.sans-serif'] = ['SimHei']
+
 # 负号的正常显示
 plt.rcParams['axes.unicode_minus'] = False
 ```
+
+
