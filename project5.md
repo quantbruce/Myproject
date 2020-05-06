@@ -1,8 +1,6 @@
 ## 项目名称：Kaggle Video Game Sales电子游戏销售分析
 
-### 项目来源：https://www.kaggle.com/gregorut/videogamesales
-
-### 项目介绍：来源于vgchartz.com的游戏行业销售数据，通过进行数据预处理和分析、从用户、发行商、市场三个角度对电子游戏销售情况展开分析，并以图表可视化的方式展示研究成果.
+### 项目数据来源：https://www.kaggle.com/gregorut/videogamesales
 
 ###  数据介绍：包含游戏名称、类型、发行时间、发布者以及在全球各地的销售额数据。
 ### 各字段含义
