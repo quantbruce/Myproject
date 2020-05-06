@@ -65,5 +65,28 @@ df.info()
  ```
  ![image](https://github.com/quantbruce/Myproject/blob/master/graph/3.png)
  
- 
+#### 可以看到几大市场的游戏平均销量由高到低依次是北美市场、欧洲市场、日本市场，这三者占据了全球绝大部分市场
+#### 销量最大的仍旧是北美市场，最小的是日本市场¶
+#### 三大市场的方差波动也呈现出与游戏平均销量的同样趋势
+
+```python
+df.describe(include='object').T
+```
+![image](https://github.com/quantbruce/Myproject/blob/master/graph/4.png)
+#### 由上述统计结果可知：该数据集种共涵盖有31个游戏平台, 12种游戏流派, 578个游戏发行商
+
+# 3. 数据预处理
+```python
+df.shape
+```
+![image](https://github.com/quantbruce/Myproject/blob/master/graph/5.png)
+```python
+# 查看数据缺失值情况
+df.info()
+```
+![image](https://github.com/quantbruce/Myproject/blob/master/graph/6.png)
+
+
+
+
  
