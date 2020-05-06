@@ -86,6 +86,36 @@ df.info()
 ```
 ![image](https://github.com/quantbruce/Myproject/blob/master/graph/6.png)
 
+```python
+# 由以上结果可知, 仅在Year, Publisher字段存在缺失情况，其他字段均无缺失
+df[df['Publisher'].isnull()|df['Year'].isnull()].shape 
+```
+![image](https://github.com/quantbruce/Myproject/blob/master/graph/7.png)
+
+```python
+# 获取缺失值占比情况
+307/df.shape[0] 
+```
+![image](https://github.com/quantbruce/Myproject/blob/master/graph/8.png)
+
+```python
+# 由以上分析结果可知, 缺失值占比只有百分之1.8%.  故采用删除操作不会影响数据平衡
+df.dropna(how='any', inplace=True)
+# 再次查看数据集df有无大幅变动
+df.describe().T
+```
+![image](https://github.com/quantbruce/Myproject/blob/master/graph/9.png)
+
+```python
+df.describe(include='object').T
+```
+![image](https://github.com/quantbruce/Myproject/blob/master/graph/10.png)
+
+
+
+
+
+
 
 
 
